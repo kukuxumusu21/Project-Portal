@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /proj-portal
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /proj-portal/index.php/$1 [L]
+php_value memory_limit 64M
